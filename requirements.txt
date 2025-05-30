@@ -1,4 +1,3 @@
-pymongo
-cassandra-driver
-redis
-neo4j
+version https://git-lfs.github.com/spec/v1
+oid sha256:c0c4a9a66e28b9ecf257e35c8967079caaebc842e02599f36fe19851604d7d4a
+size 37
