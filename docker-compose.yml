@@ -1,1 +1,32 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+
+  cassandra:
+    image: cassandra:latest
+    ports:
+      - "9042:9042"
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
+  neo4j:
+    image: neo4j:latest
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      - NEO4J_AUTH=neo4j/password
+
+  python:
+    image: python:3.10-slim
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: tail -f /dev/null  # Pour garder le conteneur actif
 
