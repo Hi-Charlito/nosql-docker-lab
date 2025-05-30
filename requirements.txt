@@ -1,1 +1,4 @@
-
+pymongo
+cassandra-driver
+redis
+neo4j
